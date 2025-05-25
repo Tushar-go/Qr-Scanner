@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Auth",
-    "slug": "Auth",
-    "scheme": "nj-auth",
+    "name": "QrScanner",
+    "slug": "qrscanner",
+    "scheme": "nj-qrscanner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,7 +20,15 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ],
+      "package": "com.tushar_dhalwal.qrscanner"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -44,6 +52,12 @@
           "isAccessMediaLocationEnabled": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "86268418-b194-497e-8200-8c2d963cea88"
+      }
+    }
   }
 }

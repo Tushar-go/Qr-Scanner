@@ -30,7 +30,7 @@ export default function ResultScreen() {
 
         // console.log("Fetching data for ID:", id);
 
-        // const apiUrl = `https://erp.ayaanmr.com/urlapi/api/url/getapi?APIKEY=TESTKEYITM&UID=API&UPW=ba1234&P1=${id}&P2=&P3=&P4=`;
+        const apiUrl = `https://erp.ayaanmr.com/urlapi/api/url/getapi?APIKEY=TESTKEYITM&UID=API&UPW=ba1234&P1=${id}&P2=&P3=&P4=`;
         // console.log("API URL:", apiUrl);
 
         const response = await fetch(apiUrl, {
