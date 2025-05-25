@@ -1,0 +1,35 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "^53.0.0",
+    "expo-av": "~15.1.4",
+    "expo-camera": "~16.1.6",
+    "expo-constants": "~17.1.6",
+    "expo-file-system": "~18.1.10",
+    "expo-image-picker": "~16.1.4",
+    "expo-linking": "~7.1.5",
+    "expo-media-library": "~17.1.6",
+    "expo-network": "~7.1.5",
+    "expo-router": "~5.0.7",
+    "expo-status-bar": "~2.2.3",
+    "expo-video": "~2.1.9",
+    "path": "^0.12.7",
+    "react": "^19.0.0",
+    "react-native": "^0.79.2",
+    "react-native-paper": "^5.14.5",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "~4.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
