@@ -52,9 +52,7 @@ Before you begin, ensure you have the following installed:
    - **Run on iOS device/emulator**: Press `i` in the terminal or scan the QR code with your iOS device using the Camera app
    - **Run in web browser**: Press `w` in the terminal
 
-
-
-
+### You can scan this QR for testing
 
 <div >
 <img src="./assets/qr.png" alt="QR Scanner Demo" width="50%">
