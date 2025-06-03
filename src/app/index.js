@@ -51,7 +51,7 @@ export default function HomeScreen() {
           return ["jpg", "jpeg", "png", "mp4", "mov"].includes(extension || "");
         });
 
-      console.log("Filtered files:", filteredFiles);
+      // console.log("Filtered files:", filteredFiles);
       setImages(filteredFiles);
       
     } catch (error) {

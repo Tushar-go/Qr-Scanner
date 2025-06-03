@@ -47,6 +47,14 @@ export default function Camera() {
     }
   };
 
+  function onTestClick (){
+    const testId = 18
+    router.push({
+        pathname: "/result",
+        params: { id: testId.toString() }
+      });
+  }
+
   useEffect(() => {
     if (permission && !permission.granted && permission.canAskAgain) {
       requestPermission();
@@ -86,6 +94,9 @@ export default function Camera() {
       >
         {cameraMode === "qr" && (
           <View style={styles.qrOverlay}>
+            <Pressable onPress={onTestClick} style={{backgroundColor:"white",paddingHorizontal:10,borderRadius:12,paddingVertical:4,marginBottom:14}}>
+          <Text>Test ID</Text>
+        </Pressable>
             <View style={styles.qrFrame} />
             <Text style={styles.qrText}>
               {hasScanned ? "Processing..." : "Point camera at QR code"}
@@ -107,6 +118,9 @@ export default function Camera() {
           size={30}
           color="white"
         />
+
+        
+        
         <MaterialIcons
           onPress={toggleCameraFacing}
           name="flip-camera-ios"

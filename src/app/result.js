@@ -10,6 +10,8 @@ export default function ResultScreen() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+
+
   useEffect(() => {
     const fetchItemData = async () => {
       if (!id) {
